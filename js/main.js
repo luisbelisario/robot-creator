@@ -11,12 +11,12 @@ controles.forEach((elemento) => {
 
 
 function manipulaDados(operacao, controle) {
-    const peca
+    const contador
         = controle.querySelector(".controle-contador")
     if(operacao === '-') {
-        peca.value = parseInt(peca.value) - 1
+        contador.value = parseInt(contador.value) - 1
     } else {
-        peca.value = parseInt(peca.value) + 1
+        contador.value = parseInt(contador.value) + 1
     }
 }
 
