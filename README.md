@@ -1,3 +1,3 @@
 # Robot-Creator
 
-Projeto para treinar funcionalidades Javascript para desenolvimento web
+Projeto para treinar funcionalidades Javascript para desenvolvimento web
