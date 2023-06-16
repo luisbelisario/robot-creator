@@ -1,18 +1,19 @@
-const controles = document.querySelectorAll(".controle-ajuste")
+const controles = document.querySelectorAll("[data-controle]")
 
 controles.forEach((elemento) => {
     elemento.addEventListener('click', (evento) => {
         console.log(evento)
-        console.log(evento.target.textContent)
+        // acessando a propriedade dataset consigo acessar os data attributes
+        console.log(evento.target.dataset.controle)
         console.log(evento.target.parentNode)
-        manipulaDados(evento.target.textContent, evento.target.parentNode)
+        manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
     })
 })
 
 
 function manipulaDados(operacao, controle) {
     const contador
-        = controle.querySelector(".controle-contador")
+        = controle.querySelector("[data-contador]")
     if(operacao === '-') {
         contador.value = parseInt(contador.value) - 1
     } else {
